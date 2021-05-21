@@ -54,7 +54,7 @@ section {
 }
 
 .main-screen {
-    background: #000;
+    background: rgb(255, 255, 255);
     display: flex;
     align-items: center;
 
@@ -67,7 +67,7 @@ section {
 
     h1 {
         font-size: 100px;
-        color: #fff;
+        color: rgb(93, 163, 204);
         margin: 0;
         pointer-events: none;
     }

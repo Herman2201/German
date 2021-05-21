@@ -1,121 +1,125 @@
 * {
-	padding: 0;
-	margin: 0;
-	border: none;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	outline: 0;
-	list-style-type: none;
-	text-decoration: none;
-	font-family: 'Raleway';
+  padding: 0;
+  margin: 0;
+  border: none;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: "Raleway";
 }
 
 .center-wrap {
-	padding: 0 25px;
-	width: 100%;
-	max-width: 1440px;
-	margin: 0 auto;
+  padding: 0 25px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .open-nav {
-	cursor: pointer;
-	position: fixed;
-	top: 25px;
-	right: 25px;
-	z-index: 999;
-	height: 25px;
+  cursor: pointer;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  z-index: 999;
+  height: 25px;
 }
 .open-nav img {
-	height: 100%;
+  height: 100%;
 }
 
 section {
-	width: 100%;
-	height: 100vh;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: -1;
-	opacity: 0;
+  width: 100%;
+  height: 100vh;
 }
 section.active {
-	-webkit-transition: 3s;
-	transition: 3s;
-	opacity: 1;
-	z-index: 1;
+  -webkit-transition: 3s;
+  transition: 3s;
+  opacity: 1;
+  z-index: 1;
 }
 
 .main-screen {
-	background: #000;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+  background: rgb(41, 136, 128);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .main-screen .center-wrap {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding: 0 170px 0 100px;
-	position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0 170px 0 100px;
+  position: relative;
 }
 .main-screen h1 {
-	font-size: 100px;
-	color: #fff;
-	margin: 0;
-	pointer-events: none;
+  font-size: 100px;
+  color: #fff;
+  margin: 0;
+  pointer-events: none;
 }
 .main-screen h2 {
-	margin-left: 150px;
-	color: #fff;
-	font-size: 20px;
-	max-width: 260px;
+  margin-left: 150px;
+  color: #fff;
+  font-size: 20px;
+  max-width: 260px;
 }
 
+.menu__avtor {
+padding-top: 6px;
+height: 70px;
+font-size: 30px;
+letter-spacing: 30px;
+display: flex;
+justify-content: center;
+background: rgb(71, 104, 112);
+}
 .menu {
-	width: auto;
-	padding: 0px 30px;
-	position: fixed;
-	height: 100vh;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	z-index: 1000;
-	left: 0;
-	top: 0;
-	transform: translateX(-100%);
-	text-align: right;
-	-webkit-transition: 1s;
-	transition: 1s;
-	background-color: rgb(0, 0, 0);
+  width: auto;
+  padding: 0px 50px;
+  position: fixed;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  transform: translateX(-100%);
+  text-align: right;
+  -webkit-transition: 1s;
+  transition: 1s;
+  background-color: rgba(0, 0, 0, 0.453);
 }
 .menu .active {
-	position: absolute;
-	left: 20px;
+  position: absolute;
+  left: 20px;
 }
 .menu ul li {
-	font-size: 25px;
-	margin-bottom: 50px;
-	cursor: pointer;
-	font-weight: 700px;
+  font-size: 25px;
+  margin-bottom: 50px;
+  cursor: pointer;
+  font-weight: 700px;
 }
 .menu ul li a {
-	color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 .menu ul li:last-of-type {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .nav_is_visible {
-	transform: translateX(0%);
+  transform: translateX(0%);
 }
 
 /*-- class of show and hide the menu --*/
